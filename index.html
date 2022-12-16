@@ -5,65 +5,27 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+       <script src="https://cdn.tailwindcss.com"></script>
     <script src="script/custom.js"></script>
 
     <title>Counter - Block</title>
 </head>
 <body>
-<p class="text-display-3 text-center pt-5">scroll down</p>
-<div style="height: 120vh"></div>
-
-<div class="section-box pt-50 pb-50 latest-news" id="counter-first">
-    <div class="container">
-        <div class="pb-40 pt-40"><h2 class="text-heading-1 text-center mb-10"></h2>
-            <ul class="list-5-col aos-init aos-animate">
-                <li>
-                    <span class="text-display-3">
-                    <span class="counter" style="display: inline" data-count="6">0</span>
-                    <span style="display: inline">+</span>
-                </span>
-                    <p class="text-body-text">Years in Business</p></li>
-                <li>
-                    <span class="text-display-3">
-                    <span class="counter" style="display: inline" data-count="12">0</span>
-                    <span style="display: inline">+</span>
-                    </span>
-                    <p>Projects Done</p></li>
-                <li><span
-                        class="text-display-3"><span class="counter" style="display: inline"
-                                                     data-count="14">0</span><span
-                        style="display: inline"></span></span>
-                    <p class="text-body-text">Countries / Offices</p></li>
-                <li><span
-                        class="text-display-3"><span class="counter" style="display: inline"
-                                                     data-count="16">0</span><span
-                        style="display: inline">+</span></span>
-                    <p class="text-body-text">Constant Clients</p></li>
-                <li><span
-                        class="text-display-3"><span class="counter" style="display: inline"
-                                                     data-count="16">0</span><span
-                        style="display: inline"></span></span>
-                    <p class="text-body-text">Constant Clients</p></li>
-                <li><span
-                        class="text-display-3"><span class="counter" style="display: inline"
-                                                     data-count="100">0</span><span
-                        style="display: inline">+</span></span>
-                    <p class="text-body-text">Paid Customers</p></li>
-                <li><span
-                        class="text-display-3 "><span class="counter" style="display: inline"
-                                                      data-count="100">0</span><span
-                        style="display: inline"></span></span>
-                    <p class="text-body-text">Paid Customers</p></li>
-            </ul>
-        </div>
+<div class="h-96"><h1 class="text-6xl text-center">Observer Counter</h1></div>
+<div class="h-96"></div>
+<div class="h-96"><h2 class="text-3xl text-center">Scroll Down</h2></div>
+<div class="md:container md:mx-auto justify-center" >
+    <div class="flex flex-row" id="counter">
+        <span class="counter basis-1/4 p-4 text-xl font-bold  bg-indigo-900 text-white" data-count="150">0</span>
+        <span class="counter basis-1/4 p-4 text-xl font-bold  bg-amber-900 text-white" data-count="1150">0</span>
+        <span class="counter basis-1/4 p-4 text-xl font-bold  bg-green-900 text-white" data-count="350">0</span>
+        <span class="counter basis-1/4 p-4 text-xl font-bold  bg-indigo-900 text-white" data-count="450">0</span>
     </div>
 </div>
-<div style="height: 50vh"></div>
+<div class="h-96"></div>
+<script src="script/jquery-3.6.0.min.js"></script>
 <script>
-    let hashtags = ['counter-first']
+    let hashtags = ['counter']
     hashtags.forEach(hashtag => {
         let el = document.getElementById(hashtag);
         if (el) {
@@ -71,11 +33,7 @@
         }
     })
 </script>
-<script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"
-></script>
+
 
 </body>
 </html>
